@@ -160,6 +160,21 @@ class OSDrawerController: UIViewController {
     // MARK: - Private properties: ContentView
     @IBInspectable var contentViewScaleValue: Float = 0.7
     @IBInspectable var contentViewFadeOutAlpha: Float = 1.0
+    @IBInspectable var contentViewInLandscapeOffsetCenterX: Float = 30.0
+    @IBInspectable var contentViewInPortraitOffsetCenterX: Float = 30.0
+    @IBInspectable var parallaxContentMinimumRelativeValue: Float = -25.0
+    @IBInspectable var parallaxContentMaximumRelativeValue: Float = 25.0
+    
+    // MARK: - Public properties: ContentView
+    @IBInspectable var interactivePopGestureRecognizerEnabled: Bool = true
+    @IBInspectable var endAllEditing: Bool = false
+    
+    // MARK: - Private properties: shadow for ContentView
+    @IBInspectable var contentViewShadowEnabled: Bool = true
+    @IBInspectable var contentViewShadowColor: UIColor = .black
+    @IBInspectable var contentViewShadowOffset: CGSize = .zero
+    @IBInspectable var contentViewShadowOpacity: Float = 0.4
+    @IBInspectable var contentViewShadowRadius: Float = 8.0
     
     
     /* ====================================================================== */
